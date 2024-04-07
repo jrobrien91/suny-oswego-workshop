@@ -18,8 +18,8 @@ This cookbook will serve as a basis for an introduction to the open-radar scienc
 
 ### Contributors
 
-<a href="https://github.com/jrobrien91/suny-oswego-workshop/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jrobrien91/suny-oswego-workshop" />
+<a href="https://github.com/jrobrien91/suny-oswego-workshop-2024/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jrobrien91/suny-oswego-workshop-2024" />
 </a>
 
 ## Structure
@@ -63,15 +63,15 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-1. Clone the `https://github.com/jrobrien91/suny-oswego-workshop/` repository:
+1. Clone the `https://github.com/jrobrien91/suny-oswego-workshop-2024/` repository:
 
    ```bash
-    git clone https://github.com/jrobrien91/suny-oswego-workshop.git
+    git clone https://github.com/jrobrien91/suny-oswego-workshop-2024.git
    ```
 
-1. Move into the `suny-oswego-workshop` directory
+1. Move into the `suny-oswego-workshop-2024` directory
    ```bash
-   cd suny-oswego-workshop
+   cd suny-oswego-workshop-2024
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash

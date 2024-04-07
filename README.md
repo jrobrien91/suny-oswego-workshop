@@ -18,8 +18,8 @@ This cookbook will serve as a basis for an introduction to the open-radar scienc
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/jrobrien91/suny-oswego-workshop/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jrorbien91/suny-oswego-workshop" />
 </a>
 
 ## Structure

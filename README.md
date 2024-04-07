@@ -19,7 +19,7 @@ This cookbook will serve as a basis for an introduction to the open-radar scienc
 ### Contributors
 
 <a href="https://github.com/jrobrien91/suny-oswego-workshop/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jrorbien91/suny-oswego-workshop" />
+  <img src="https://contrib.rocks/image?repo=jrobrien91/suny-oswego-workshop" />
 </a>
 
 ## Structure

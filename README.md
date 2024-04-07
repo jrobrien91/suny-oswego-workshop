@@ -1,20 +1,20 @@
 <img src="thumbnail.png" alt="thumbnail" width="300"/>
 
-# (Replace_with_your_title) Cookbook
+# SUNY Oswego Workshop Cookbook
 
 [![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
+This Project Pythia Cookbook covers working with radar data in Python, including examples from NEXRAD and the Doppler of Wheels from the [Lake Effect Electrication (LEE)](https://data.eol.ucar.edu/project/LEE) project. 
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+This cookbook will serve as a basis for an introduction to the open-radar science software stack, mainly [Py-ART](https://arm-doe.github.io/pyart/) and [xradar](https://docs.openradarscience.org/projects/xradar/en/stable/#). Users are encouraged to join the [Open Radar Discourse group](https://openradar.discourse.group/) for further interaction with the open-radar community. The majority of the material is repurposed from the [Project Pythia Radar Cookbook](https://projectpythia.org/radar-cookbook/README.html) and includes further details. 
 
 ## Authors
 
-[First Author](@first-author), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
+[Joe O'Brien](https://github.com/jrobrien91) [Max Grover](https://github.com/mgrover1), [Kai Mühlbauer](https://github.com/kmuehlbauer), [Alfonso Ladino](https://github.com/aladino), [Scott Collis](https://github.com/scollis), [Zach Sherman](https://github.com/zssherman), [Bobby Jackson](https://github.com/rcjackson), [Joe O'Brien](https://github.com/jrobrien91)
 
 ### Contributors
 
@@ -24,15 +24,19 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+This cookbook will be broken into three sections which include radar basics, radar software foundations, and an example from LEE for group exercise. 
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+### Section 1 ( Radar Basics )
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+Radar basics will include a presentation on radar data formats and background information on the open radar software stack.
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+### Section 2 ( Radar Software Foundations )
 
-(Add content for this section, e.g., "Example workflows include ... ")
+This section will include reading and displaying radar data with Py-ART and xradar. 
+
+### Section 3 ( LEE Example )
+
+Students will work through an example notebook utilizing data obtained from LEE. 
 
 ## Running the Notebooks
 
@@ -59,22 +63,20 @@ Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyt
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)
-
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/jrobrien91/suny-oswego-workshop/` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/jrobrien91/suny-oswego-workshop.git
    ```
 
-1. Move into the `cookbook-example` directory
+1. Move into the `suny-oswego-workshop` directory
    ```bash
-   cd cookbook-example
+   cd suny-oswego-workshop
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate oswego-radar
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash

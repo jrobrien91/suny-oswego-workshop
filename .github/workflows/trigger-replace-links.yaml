@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Find and Replace Repository Name
+      - name: jrobrien91/suny-oswego-workshop-2024
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "ProjectPythia/cookbook-template"
@@ -19,7 +19,7 @@ jobs:
           regex: false
           exclude: ".github/workflows/trigger-replace-links.yaml"
 
-      - name: Find and Replace Repository ID
+      - name: https://github.com/jrobrien91/suny-oswego-workshop-2024.git
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "475509405"

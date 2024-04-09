@@ -30,13 +30,13 @@ This cookbook will be broken into three sections which include radar basics, rad
 
 Radar basics will include a presentation on radar data formats and background information on the open radar software stack.
 
-### Section 2 ( Radar Software Foundations )
+### Section 2 (Py-ART Basics)
 
-This section will include reading and displaying radar data with Py-ART and xradar. 
+Example notebooks on the basics of Py-ART
 
-### Section 3 ( LEE Example )
+### Section 3 ( SOURCE Example )
 
-Students will work through an example notebook utilizing data obtained from LEE. 
+Students will work through an example notebook utilizing data obtained from SOURCE. 
 
 ## Running the Notebooks
 

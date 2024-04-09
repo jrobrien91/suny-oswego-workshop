@@ -6,7 +6,7 @@
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-This Project Pythia Cookbook covers working with radar data in Python, including examples from NEXRAD and the Doppler of Wheels from the [Lake Effect Electrication (LEE)](https://data.eol.ucar.edu/project/LEE) project. 
+This Project Pythia Cookbook covers working with radar data in Python, including examples from NEXRAD and the Doppler of Wheels from the SUNY Oswego SOURCE project. 
 
 ## Motivation
 

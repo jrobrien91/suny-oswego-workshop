@@ -7,3 +7,6 @@ parts:
   - caption: The Content!
     chapters:
       - file: notebooks/slides.md
+      - file: notebooks/pyart-basics.ipynb
+      - file: notebooks/pyart-gridding.ipynb
+      - file: notebooks/source-DOW.ipynb

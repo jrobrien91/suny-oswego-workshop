@@ -4,9 +4,14 @@ parts:
   - caption: Preamble
     chapters:
       - file: notebooks/how-to-cite
-  - caption: The Content!
+  - caption: Radar Basics
     chapters:
       - file: notebooks/slides.md
+  - caption: Py-ART Basics
+    chapters:
       - file: notebooks/pyart-basics.ipynb
       - file: notebooks/pyart-gridding.ipynb
+  - caption: SOURCE Example
+    chapters:
       - file: notebooks/source-DOW.ipynb
+      - file: notebooks/source-DOW-solutions.ipynb

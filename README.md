@@ -3,7 +3,6 @@
 # SUNY Oswego Workshop Cookbook
 
 [![nightly-build](https://github.com/jrobrien91/suny-oswego-workshop-2024/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/jrobrien91/suny-oswego-workshop-2024/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/jrobrien91/suny-oswego-workshop-2024/HEAD)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
 This Project Pythia Cookbook covers working with radar data in Python, including examples from NEXRAD and the Doppler of Wheels from the SUNY Oswego SOURCE project. 

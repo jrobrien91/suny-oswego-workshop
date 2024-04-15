@@ -1,0 +1,1383 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Your Turn! - SUNY Oswego SOURCE &#8212; Project Pythia Cookbook Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-pythia-theme.min.css?v=e502140d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0efeab3" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-T52X8HNYE8"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-T52X8HNYE8');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-T52X8HNYE8');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/source-DOW-solutions';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Your Turn! - SUNY Oswego SOURCE" href="source-DOW.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="15 April 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  <div class="pst-scroll-pixel-helper"></div>
+    <header class="bd-header navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+   
+
+<a class="navbar-brand logo" href="https://projectpythia.org">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/pythia_logo-white-rtext.svg" class="logo__image only-light" alt="Project Pythia Cookbook Template - Home"/>
+    <script>document.write(`<img src="../_static/pythia_logo-white-rtext.svg" class="logo__image only-dark" alt="Project Pythia Cookbook Template - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://foundations.projectpythia.org">Foundations</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://cookbooks.projectpythia.org">Cookbooks</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org/resource-gallery.html">Resources</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org/index.html#join-us">Community</a>
+  </li>
+  
+  
+</ul></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ProjectPythia" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/project_pythia" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+        
+        
+        
+        <div class="bd-sidebar-primary bd-sidebar">
+          
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org">Home</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://foundations.projectpythia.org">Foundations</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://cookbooks.projectpythia.org">Cookbooks</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org/resource-gallery.html">Resources</a>
+  </li>
+  
+  <li class="nav-item">
+    
+    
+    
+    <a class="nav-link nav-internal" href="https://projectpythia.org/index.html#join-us">Community</a>
+  </li>
+  
+  
+</ul></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ProjectPythia" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/project_pythia" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    SUNY Oswego Workshop Cookbook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preamble</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="how-to-cite.html">How to Cite This Cookbook</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Radar Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="slides.html">Radar Basics Presentation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Py-ART Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pyart-basics.html">Py-ART Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyart-gridding.html">Py-ART Gridding</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SOURCE Example</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="source-DOW.html">Your Turn! - SUNY Oswego SOURCE</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Your Turn! - SUNY Oswego SOURCE</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+        </div>
+
+        
+        <main id="main-content" class="bd-main" role="main">
+          
+
+            <div class="bd-content">
+
+              <div class="bd-article-container">
+
+                
+                  
+                  
+<div id="searchbox"></div>
+                  <article class="bd-article">
+                    
+  <section class="tex2jax_ignore mathjax_ignore" id="your-turn-suny-oswego-source">
+<h1>Your Turn! - SUNY Oswego SOURCE<a class="headerlink" href="#your-turn-suny-oswego-source" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<ul class="simple">
+<li><p>Data from DOW6 have been processed for SOURCE and are available.</p></li>
+<li><p>Below, a sample file has been staged for your use.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># File Location</span>
+<span class="n">dow_file</span> <span class="o">=</span> <span class="s1">&#39;data/cfrad.20240404_060356.104_DOW6_v170_s17_el1.92_SUR.nc&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition alert alert-success">
+<p class="admonition-title">Question 1 - Easy</p>
+<p>Similar to the previous notebook, create a PPI display of the DOW radar data</p>
+</div>
+<section id="solution-read-in-the-dow-file-and-use-the-plotting-cell-from-previous-notebook">
+<h2>Solution - Read in the DOW file and use the plotting cell from previous notebook<a class="headerlink" href="#solution-read-in-the-dow-file-and-use-the-plotting-cell-from-previous-notebook" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># first read in pyart and associated libraries </span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">pyart</span>
+
+<span class="kn">from</span> <span class="nn">metpy.plots</span> <span class="kn">import</span> <span class="n">USCOUNTIES</span>
+
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+<span class="kn">import</span> <span class="nn">cartopy.feature</span> <span class="k">as</span> <span class="nn">cfeature</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>## You are using the Python ARM Radar Toolkit (Py-ART), an open source
+## library for working with weather radar data. Py-ART is partly
+## supported by the U.S. Department of Energy as part of the Atmospheric
+## Radiation Measurement (ARM) Climate Research Facility, an Office of
+## Science user facility.
+##
+## If you use this software to prepare a publication, please cite:
+##
+##     JJ Helmus and SM Collis, JORS 2016, doi: 10.5334/jors.119
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read in the DOW file</span>
+<span class="n">radar</span> <span class="o">=</span> <span class="n">pyart</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">dow_file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine what parameters are within the radar object; similiar to previous notebook</span>
+<span class="c1"># Note - variable names have changed and new fields added with DOW processing.</span>
+<span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;NCP&#39;, &#39;TRIP_FLA&#39;, &#39;SNRHC&#39;, &#39;SNRVC&#39;, &#39;DBMHC&#39;, &#39;DBMVC&#39;, &#39;DBZHC&#39;, &#39;DBZHC_F&#39;, &#39;DBZVC&#39;, &#39;DBZVC_F&#39;, &#39;VEL&#39;, &#39;VEL_F&#39;, &#39;VS&#39;, &#39;VS_F&#39;, &#39;VL&#39;, &#39;VL_F&#39;, &#39;WIDTH&#39;, &#39;ZDRM&#39;, &#39;RHOHV&#39;, &#39;PHIDP&#39;, &#39;KDP&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># inspection the radar object if you need more information</span>
+radar<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine what type of file we are dealing with</span>
+<span class="c1"># is it PPI scan, RHI scan, one elevation scan, multiple?</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of sweeps&#39;</span><span class="p">,</span> <span class="n">radar</span><span class="o">.</span><span class="n">nsweeps</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of gates&#39;</span><span class="p">,</span> <span class="n">radar</span><span class="o">.</span><span class="n">ngates</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of rays&#39;</span><span class="p">,</span> <span class="n">radar</span><span class="o">.</span><span class="n">nrays</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>number of sweeps 1
+number of gates 989
+number of rays 720
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine the range of Azimuth angles </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">radar</span><span class="o">.</span><span class="n">azimuth</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">radar</span><span class="o">.</span><span class="n">azimuth</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.3
+359.8
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">radar</span><span class="o">.</span><span class="n">instrument_parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;frequency&#39;, &#39;follow_mode&#39;, &#39;pulse_width&#39;, &#39;prt_mode&#39;, &#39;prt&#39;, &#39;prt_ratio&#39;, &#39;polarization_mode&#39;, &#39;nyquist_velocity&#39;, &#39;unambiguous_range&#39;, &#39;n_samples&#39;, &#39;radar_antenna_gain_h&#39;, &#39;radar_antenna_gain_v&#39;, &#39;radar_beam_width_h&#39;, &#39;radar_beam_width_v&#39;, &#39;radar_rx_bandwidth&#39;, &#39;measured_transmit_power_v&#39;, &#39;measured_transmit_power_h&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># helpful to know</span>
+<span class="n">radar</span><span class="o">.</span><span class="n">instrument_parameters</span><span class="p">[</span><span class="s1">&#39;nyquist_velocity&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;long_name&#39;: &#39;unambiguous_doppler_velocity&#39;,
+ &#39;units&#39;: &#39;meters per second&#39;,
+ &#39;_FillValue&#39;: -9999.0,
+ &#39;meta_group&#39;: &#39;instrument_parameters&#39;,
+ &#39;data&#39;: masked_array(data=[28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533,
+                    28.703533, 28.703533, 28.703533, 28.703533, 28.703533],
+              mask=False,
+        fill_value=1e+20,
+             dtype=float32)}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check metadata within file for additional information on scan strategies</span>
+<span class="n">radar</span><span class="o">.</span><span class="n">metadata</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Conventions&#39;: &#39;CF-1.7&#39;,
+ &#39;Sub_conventions&#39;: &#39;CF-Radial instrument_parameters radar_parameters radar_calibration&#39;,
+ &#39;version&#39;: &#39;CF-Radial-1.4&#39;,
+ &#39;title&#39;: &#39;&#39;,
+ &#39;institution&#39;: &#39;&#39;,
+ &#39;references&#39;: &#39;&#39;,
+ &#39;source&#39;: &#39;&#39;,
+ &#39;history&#39;: &#39;&#39;,
+ &#39;comment&#39;: &#39;Written by DoradeRadxFile object&#39;,
+ &#39;original_format&#39;: &#39;CFRADIAL&#39;,
+ &#39;driver&#39;: &#39;&#39;,
+ &#39;created&#39;: &#39;&#39;,
+ &#39;start_datetime&#39;: &#39;2024-04-04T06:03:56Z&#39;,
+ &#39;time_coverage_start&#39;: &#39;2024-04-04T06:03:56Z&#39;,
+ &#39;start_time&#39;: &#39;2024-04-04 06:03:56.104&#39;,
+ &#39;end_datetime&#39;: &#39;2024-04-04T06:04:07Z&#39;,
+ &#39;time_coverage_end&#39;: &#39;2024-04-04T06:04:07Z&#39;,
+ &#39;end_time&#39;: &#39;2024-04-04 06:04:07.977&#39;,
+ &#39;instrument_name&#39;: &#39;DOW6low&#39;,
+ &#39;site_name&#39;: &#39;DOW6low&#39;,
+ &#39;scan_name&#39;: &#39;&#39;,
+ &#39;scan_id&#39;: 0,
+ &#39;platform_is_mobile&#39;: &#39;false&#39;,
+ &#39;n_gates_vary&#39;: &#39;false&#39;,
+ &#39;ray_times_increase&#39;: &#39;true&#39;,
+ &#39;volume_number&#39;: 170,
+ &#39;platform_type&#39;: &#39;fixed&#39;,
+ &#39;instrument_type&#39;: &#39;radar&#39;,
+ &#39;primary_axis&#39;: &#39;axis_z&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-------------------</span>
+<span class="c1"># Plot the Radar PPI</span>
+<span class="c1">#-------------------</span>
+<span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">43.0</span><span class="p">,</span> <span class="mf">45.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.5</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+<span class="c1">#ax1 = fig.add_subplot(111)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="c1"># Create the Radar Display Object</span>
+<span class="n">display</span> <span class="o">=</span> <span class="n">pyart</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">RadarMapDisplay</span><span class="p">(</span><span class="n">radar</span><span class="p">)</span>
+
+<span class="c1"># Plot the reflectivty</span>
+<span class="c1"># Note - I did not add the sweep parameter since there is only one sweep per file!</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;DBZVC_F&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span>
+                     <span class="n">vmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span>
+                     <span class="n">vmax</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;pyart_ChaseSpectral&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/3bd867991927203e767b78c6257f308a6dd314d7336493b8a3aaeed2322de51b.png" src="../_images/3bd867991927203e767b78c6257f308a6dd314d7336493b8a3aaeed2322de51b.png" />
+</div>
+</div>
+<div class="admonition alert alert-warning">
+<p class="admonition-title">Question 2 - Intermediate</p>
+<p>What type of precipitation occured (i.e. hydrometeor classification) can rely upon a
+a variety of radar parameters.
+Create a display of a radar field that can used to identify specific hydrometeors.</p>
+</div>
+</section>
+<section id="solution-compare-equivalent-radar-reflectivity-factor-differential-reflectivity-and-coorelation-coefficient">
+<h2>Solution - Compare Equivalent Radar Reflectivity Factor, Differential Reflectivity, and Coorelation Coefficient<a class="headerlink" href="#solution-compare-equivalent-radar-reflectivity-factor-differential-reflectivity-and-coorelation-coefficient" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># To compare 3 simultaneous fields, we leverage matplotlib and make a multi-panel plot(s)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">,</span> <span class="n">ax3</span><span class="p">,</span> <span class="n">ax4</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">],</span> <span class="n">subplot_kw</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;projection&quot;</span><span class="p">:</span> <span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">()})</span>
+
+<span class="c1"># adjust space between subplots</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># Reflectivity</span>
+<span class="c1"># Note - I assigned the display to axis 1 using the &#39;ax&#39; feature</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;DBZVC_F&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span>
+                     <span class="n">vmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span>
+                     <span class="n">vmax</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;pyart_ChaseSpectral&quot;</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="c1"># Differential Reflectivity</span>
+<span class="c1"># Reflectivity</span>
+<span class="c1"># Note - I assigned the display to axis 1 using the &#39;ax&#39; feature</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;ZDRM&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span>
+                     <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;pyart_ChaseSpectral&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="c1"># Correlation Coefficient</span>
+<span class="c1"># Note - I assigned the display to axis 1 using the &#39;ax&#39; feature</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;RHOHV&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax3</span><span class="p">,</span>
+                     <span class="n">vmin</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                     <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="c1"># Velocity</span>
+<span class="c1"># Note - I assigned the display to axis 1 using the &#39;ax&#39; feature</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;VEL&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax4</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;cartopy.mpl.feature_artist.FeatureArtist at 0x7f2691a62630&gt;
+</pre></div>
+</div>
+<img alt="../_images/f860a1ee1521d310b97073acfc8de822dc0f43936c09cbab50959e94b1b835b2.png" src="../_images/f860a1ee1521d310b97073acfc8de822dc0f43936c09cbab50959e94b1b835b2.png" />
+</div>
+</div>
+<div class="admonition alert alert-danger">
+<p class="admonition-title">Question 3 - Hard</p>
+<p>Equivalent Radar Reflectivity factor can be used to determine precipitation rates. Create a function to calculate snowfall from this field and display snowfall rates using the following equation</p>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="z-s-relationships">
+<h1>Z-S Relationships<a class="headerlink" href="#z-s-relationships" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<p><span class="math notranslate nohighlight">\(Z = A*S ^ {B}\)</span></p>
+<p>Where:</p>
+<ul class="simple">
+<li><p>Z = Reflectivity in dBZ</p></li>
+<li><p>A = Coefficient applied to Z-S Relationship (not in the exponent)</p></li>
+<li><p>S = Liquid snowfall rate</p></li>
+<li><p>B = Coefficient applied to Z-S Relationship (in the exponent)</p></li>
+</ul>
+<p>We also need to apply a snow water equivalent ratio (<code class="docutils literal notranslate"><span class="pre">swe</span></code>) to convert from liquid to snow (ex. 8 inches of snow –&gt; 1 inch of rain would be 8.0).</p>
+<p>This equation now becomes:</p>
+<p><span class="math notranslate nohighlight">\(Z = swe*A*S ^ {B}\)</span></p>
+<p>Solving for S, we get:</p>
+<p><span class="math notranslate nohighlight">\(S = swe * (\frac{z}{a})^{1/B}\)</span></p>
+<p>Where z is reflectivity in units of dB (<span class="math notranslate nohighlight">\(z =10^{Z/10}\)</span>)</p>
+<section id="solution-calculate-new-field-from-above-equation-and-reflectivity-add-it-back-into-the-radar-object-and-display">
+<h2>Solution - Calculate new field from above equation and reflectivity, add it back into the radar object, and display<a class="headerlink" href="#solution-calculate-new-field-from-above-equation-and-reflectivity-add-it-back-into-the-radar-object-and-display" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">snow_rate</span><span class="p">(</span><span class="n">radar</span><span class="p">,</span> <span class="n">swe_ratio</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Snow rate applied to a pyart.Radar object</span>
+<span class="sd">    </span>
+<span class="sd">    Takes a given Snow Water Equivilent ratio (swe_ratio), A and B value</span>
+<span class="sd">    for the Z-S relationship and creates a radar field similar to DBZ</span>
+<span class="sd">    showing the radar estimated snowfall rate in mm/hr. Then the given</span>
+<span class="sd">    SWE_ratio, A and B are stored in the radar metadata for later </span>
+<span class="sd">    reference.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Setting up for Z-S relationship:</span>
+    <span class="n">snow_z</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;DBZHC_F&#39;</span><span class="p">][</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="c1"># Convert it from dB to linear units</span>
+    <span class="n">z_lin</span> <span class="o">=</span> <span class="mf">10.0</span><span class="o">**</span><span class="p">(</span><span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;DBZHC_F&#39;</span><span class="p">][</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">10.</span><span class="p">)</span>
+    <span class="c1"># Apply the Z-S relation.</span>
+    <span class="n">snow_z</span> <span class="o">=</span> <span class="n">swe_ratio</span> <span class="o">*</span> <span class="p">(</span><span class="n">z_lin</span><span class="o">/</span><span class="n">A</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">B</span><span class="p">)</span>
+    <span class="c1"># Add the field back to the radar. Use reflectivity as a template</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">add_field_like</span><span class="p">(</span><span class="s1">&#39;DBZHC_F&#39;</span><span class="p">,</span> <span class="s1">&#39;snow_z&#39;</span><span class="p">,</span>  <span class="n">snow_z</span><span class="p">,</span>
+                         <span class="n">replace_existing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># Update units and metadata</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;units&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;mm/h&#39;</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;standard_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;snowfall_rate&#39;</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;long_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;snowfall_rate_from_z&#39;</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;valid_min&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;valid_max&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">500</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;swe_ratio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swe_ratio</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span>
+    <span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="s1">&#39;snow_z&#39;</span><span class="p">][</span><span class="s1">&#39;B&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">B</span>
+    <span class="k">return</span> <span class="n">radar</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="call-the-above-function-to-calculate-snowfall-rates-with-your-chosen-relationship">
+<h2>Call the above function to calculate snowfall rates with your chosen relationship<a class="headerlink" href="#call-the-above-function-to-calculate-snowfall-rates-with-your-chosen-relationship" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reference</p></th>
+<th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>Band</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Matrosov et al.(2009) Braham(1990)</p></td>
+<td><p>67</p></td>
+<td><p>1.28</p></td>
+<td><p>X</p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">radar</span> <span class="o">=</span> <span class="n">snow_rate</span><span class="p">(</span><span class="n">radar</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mf">1.28</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check the new field, snow_z, is within the radar object</span>
+<span class="n">radar</span><span class="o">.</span><span class="n">fields</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;NCP&#39;, &#39;TRIP_FLA&#39;, &#39;SNRHC&#39;, &#39;SNRVC&#39;, &#39;DBMHC&#39;, &#39;DBMVC&#39;, &#39;DBZHC&#39;, &#39;DBZHC_F&#39;, &#39;DBZVC&#39;, &#39;DBZVC_F&#39;, &#39;VEL&#39;, &#39;VEL_F&#39;, &#39;VS&#39;, &#39;VS_F&#39;, &#39;VL&#39;, &#39;VL_F&#39;, &#39;WIDTH&#39;, &#39;ZDRM&#39;, &#39;RHOHV&#39;, &#39;PHIDP&#39;, &#39;KDP&#39;, &#39;snow_z&#39;])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now display the snowfall rates</span>
+<span class="c1">#-------------------</span>
+<span class="c1"># Plot the Radar PPI</span>
+<span class="c1">#-------------------</span>
+<span class="n">bounds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">43.0</span><span class="p">,</span> <span class="mf">45.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.5</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">())</span>
+<span class="c1">#ax1 = fig.add_subplot(111)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">cfeature</span><span class="o">.</span><span class="n">STATES</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="n">USCOUNTIES</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+<span class="c1"># Create the Radar Display Object</span>
+<span class="n">display</span> <span class="o">=</span> <span class="n">pyart</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">RadarMapDisplay</span><span class="p">(</span><span class="n">radar</span><span class="p">)</span>
+
+<span class="c1"># Plot the reflectivty</span>
+<span class="c1"># Note - I did not add the sweep parameter since there is only one sweep per file!</span>
+<span class="n">display</span><span class="o">.</span><span class="n">plot_ppi_map</span><span class="p">(</span><span class="s1">&#39;snow_z&#39;</span><span class="p">,</span> 
+                     <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span>
+                     <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                     <span class="n">vmax</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+                     <span class="n">min_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                     <span class="n">max_lat</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                     <span class="n">min_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+                     <span class="n">max_lon</span><span class="o">=</span><span class="n">bounds</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                     <span class="n">embellish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                     <span class="n">norm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/03abc7a559b743f52832f05ad466b42c55383dac5f0ceb572d24b6cf126e3d6e.png" src="../_images/03abc7a559b743f52832f05ad466b42c55383dac5f0ceb572d24b6cf126e3d6e.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                  </article>
+
+                
+                
+
+                
+                
+                  <footer class="prev-next-footer">
+                    
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="source-DOW.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Your Turn! - SUNY Oswego SOURCE</p>
+      </div>
+    </a>
+</div>
+                  </footer>
+                
+              </div>
+
+              
+              
+                
+                  <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Your Turn! - SUNY Oswego SOURCE</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-read-in-the-dow-file-and-use-the-plotting-cell-from-previous-notebook">Solution - Read in the DOW file and use the plotting cell from previous notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-compare-equivalent-radar-reflectivity-factor-differential-reflectivity-and-coorelation-coefficient">Solution - Compare Equivalent Radar Reflectivity Factor, Differential Reflectivity, and Coorelation Coefficient</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#z-s-relationships">Z-S Relationships</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-calculate-new-field-from-above-equation-and-reflectivity-add-it-back-into-the-radar-object-and-display">Solution - Calculate new field from above equation and reflectivity, add it back into the radar object, and display</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#call-the-above-function-to-calculate-snowfall-rates-with-your-chosen-relationship">Call the above function to calculate snowfall rates with your chosen relationship</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+                
+              
+
+
+                
+                <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?urlpath=lab/tree/notebooks/source-DOW-solutions.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/ProjectPythia/cookbook-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ProjectPythia/cookbook-template/edit/main/notebooks/source-DOW-solutions.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ProjectPythia/cookbook-template/issues/new?title=Issue%20on%20page%20%2Fnotebooks/source-DOW-solutions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/source-DOW-solutions.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+            </div>
+
+            <footer class="bd-footer-content">
+              
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the <a href="https://projectpythia.org/">Project Pythia</a> Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on 15 April 2024.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+            </footer>
+
+        </main>
+    </div>
+  </div>
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+     
+  
+  
+  
+  
+    <div class="footer-items__start">
+      <div class="container-fluid m-0 p-0">
+      
+        <div class="footer-item">
+  <div class="container-fluid footer-logos">
+    <div class="container-xl">
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
+          <img alt="NCAR" src="../_images/NSF-NCAR_Lockup-UCAR-Dark_102523.svg" style="width: 100%">
+        </div>
+        <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
+          <img alt="Unidata" src="../_images/Unidata_logo_horizontal_1200x300.svg" style="width: 100%">
+        </div>
+        <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
+          <img alt="UAlbany" src="../_images/UAlbany-A2-logo-purple-gold.svg" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div></div>
+      
+        <div class="footer-item">  <div class="container-fluid footer-info">
+    <div class="container-xl">
+      <div class="d-flex justify-content-center">
+        <p class="py-1 m-0">
+            &copy;&nbsp;2024.
+        
+          By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
+        
+          Last updated on 15 April 2024.
+        </p>
+      </div>
+    </div>
+  </div></div>
+      
+      </div>
+    </div>
+  
+
+  </footer>
+  </body>
+</html>
